@@ -1,0 +1,23 @@
+{
+  "name": "advent-of-code-2017",
+  "version": "1.0.0",
+  "description": "Solutions to advent of code 2017",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semone/advent-of-code-2017.git"
+  },
+  "author": "Semone Kallin Thander",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/semone/advent-of-code-2017/issues"
+  },
+  "homepage": "https://github.com/semone/advent-of-code-2017#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1"
+  }
+}
