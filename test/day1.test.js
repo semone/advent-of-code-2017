@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day1 = require('../../src/day1/day1')
+const day1 = require('../src/day1/day1')
 
 describe('Capcha Part1', () => {
   it('shall produce a sum of 3', () => {

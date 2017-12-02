@@ -1,7 +1,8 @@
 const fs = require('fs')
 const day1 = require('./src/day1/day1')
+const day2 = require('./src/day2/day2')
 
-// Read file
+// Day 1
 fs.readFile('./src/day1/day1-input.txt', 'utf-8', (err, data) => {
   if (err) {
     throw err
@@ -11,4 +12,16 @@ fs.readFile('./src/day1/day1-input.txt', 'utf-8', (err, data) => {
 
   console.log(`Result Day 1 Part 1: ${result1}`)
   console.log(`Result Day 1 Part 2: ${result2}`)
+})
+
+// Day 2
+fs.readFile('./src/day2/day2-input.txt', 'utf-8', (err, data) => {
+  if (err) {
+    throw err
+  }
+  const result1 = day2.solvePart1(data)
+  const result2 = day2.solvePart2(data)
+
+  console.log(`Result Day 2 Part 1: ${result1}`)
+  console.log(`Result Day 2 Part 2: ${result2}`)
 })

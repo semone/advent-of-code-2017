@@ -29,8 +29,8 @@ function solvePart1 (sequence) {
   return result.sum
 }
 
-function solvePart2 (input) {
-  return input.split('')
+function solvePart2 (sequence) {
+  return sequence.split('')
     .map(Number)
     .reduce((sum, currentItem, index, inputArray) => {
       if (currentItem === inputArray[(inputArray.length / 2) + index]) {
