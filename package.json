@@ -4,7 +4,8 @@
   "description": "Solutions to advent of code 2017",
   "main": "index.js",
   "scripts": {
-    "test": "mocha || true"
+		"test": "mocha --recursive || true",
+		"start":  "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,5 @@
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
     "mocha": "^4.0.1"
-  }
+	}
 }
