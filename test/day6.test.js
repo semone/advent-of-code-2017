@@ -11,7 +11,7 @@ describe('Memory Reallocation Part 1', () => {
 })
 
 describe('Memory Reallocation Part 2', () => {
-  it('shall return 10', () => {
+  it('shall return 4', () => {
     const input = '0\t2\t7\t0'
     const result = day6.solvePart2(input)
     assert.equal(result, 4)

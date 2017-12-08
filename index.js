@@ -5,6 +5,8 @@ const day3 = require('./src/day3/day3')
 const day4 = require('./src/day4/day4')
 const day5 = require('./src/day5/day5')
 const day6 = require('./src/day6/day6')
+const day7 = require('./src/day7/day7')
+const day8 = require('./src/day8/day8')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day1/day1-input.txt', 'utf-8')
@@ -58,3 +60,18 @@ const result62 = day6.solvePart2(inputDay6)
 console.log('------> Memory Reallocation')
 console.log(`Result Day 5 Part 1: ${result61}`)
 console.log(`Result Day 5 Part 2: ${result62}\n`)
+
+const inputDay7 = fs.readFileSync('./src/day7/day7-input.txt', 'utf-8')
+
+const result71 = day7.solvePart1(inputDay7)
+
+console.log('------> Recursive Circus')
+console.log(`Result Day 7 Part 1: ${result71}`)
+day7.solvePart2(inputDay7, result71)
+
+const inputDay8 = fs.readFileSync('./src/day8/day8-input.txt', 'utf-8')
+const result81 = day8.solve(inputDay8)
+
+console.log('\n------> I Heard You Like Registers')
+console.log(`Result Day 8 Part 1: ${result81[0]}`)
+console.log(`Result Day 8 Part 2: ${result81[1]}`)
