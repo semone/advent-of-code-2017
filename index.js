@@ -7,6 +7,7 @@ const day5 = require('./src/day5/day5')
 const day6 = require('./src/day6/day6')
 const day7 = require('./src/day7/day7')
 const day8 = require('./src/day8/day8')
+const day9 = require('./src/day9/day9')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day1/day1-input.txt', 'utf-8')
@@ -75,3 +76,10 @@ const result81 = day8.solve(inputDay8)
 console.log('\n------> I Heard You Like Registers')
 console.log(`Result Day 8 Part 1: ${result81[0]}`)
 console.log(`Result Day 8 Part 2: ${result81[1]}`)
+
+const inputDay9 = fs.readFileSync('./src/day9/day9-input.txt', 'utf-8')
+const result9 = day9.getNumberOfGroups(inputDay9)
+
+console.log('\n------> Stream Processing')
+console.log(`Result Day 9 Part 1: ${result9[0]}`)
+console.log(`Result Day 9 Part 2: ${result9[1]}`)
