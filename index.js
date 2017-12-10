@@ -8,6 +8,7 @@ const day6 = require('./src/day6/day6')
 const day7 = require('./src/day7/day7')
 const day8 = require('./src/day8/day8')
 const day9 = require('./src/day9/day9')
+const day10 = require('./src/day10/day10')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day1/day1-input.txt', 'utf-8')
@@ -83,3 +84,13 @@ const result9 = day9.getNumberOfGroups(inputDay9)
 console.log('\n------> Stream Processing')
 console.log(`Result Day 9 Part 1: ${result9[0]}`)
 console.log(`Result Day 9 Part 2: ${result9[1]}`)
+
+const inputDay10 = fs.readFileSync('./src/day10/day10-input.txt', 'utf-8')
+const listSize = 256
+
+const result101 = day10.solvePart1(inputDay10, listSize)
+const result102 = day10.solvePart2(inputDay10, listSize)
+
+console.log('\n------> Knot Hash')
+console.log(`Result Day 10 Part 1: ${result101}`)
+console.log(`Result Day 10 Part 2: ${result102}`)
