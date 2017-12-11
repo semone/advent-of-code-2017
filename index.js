@@ -9,6 +9,7 @@ const day7 = require('./src/day7/day7')
 const day8 = require('./src/day8/day8')
 const day9 = require('./src/day9/day9')
 const day10 = require('./src/day10/day10')
+const day11 = require('./src/day11/day11')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day1/day1-input.txt', 'utf-8')
@@ -94,3 +95,11 @@ const result102 = day10.solvePart2(inputDay10, listSize)
 console.log('\n------> Knot Hash')
 console.log(`Result Day 10 Part 1: ${result101}`)
 console.log(`Result Day 10 Part 2: ${result102}`)
+
+const inputDay11 = fs.readFileSync('./src/day11/day11-input.txt', 'utf-8')
+
+const result111 = day11.solve(inputDay11)
+
+console.log('\n------> inputDay11')
+console.log(`Result Day 11 Part 1: ${result111[0]}`)
+console.log(`Result Day 11 Part 2: ${result111[1]}`)

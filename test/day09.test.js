@@ -3,18 +3,6 @@ const assert = require('chai').assert
 const day9 = require('../src/day9/day9')
 
 describe('Stream Processing Part 1', () => {
-  // it('shall clean garbage', () => {
-  //   const input = '{<a>,<a>,<a>,<a>}'
-  //   const result = day9.cleanGarbage(input)
-  //   assert.equal(result[0], '{,,,}')
-  // })
-
-  // it('shall clean garbage', () => {
-  //   const input = '{<{},{},{{}}>}'
-  //   const result = day9.cleanGarbage(input)
-  //   assert.equal(result[0], '{}')
-  // })
-
   it('shall remove ignored chars', () => {
     const input = '{{<!>},{<!>},{<!>},{<a>}}'
     const result = day9.removeIgnoredChars(input)
