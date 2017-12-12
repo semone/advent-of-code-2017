@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day6 = require('../src/day6/day6')
+const day6 = require('../src/day06/day6')
 
 describe('Memory Reallocation Part 1', () => {
   it('shall return 5', () => {

@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day2 = require('../src/day3/day3')
+const day2 = require('../src/day03/day3')
 
 describe('Spiral Memory Part 1', () => {
   it('shall return 0', () => {

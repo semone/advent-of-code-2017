@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day5 = require('../src/day5/day5')
+const day5 = require('../src/day05/day5')
 
 describe('A Maze of Twisty Trampolines, All Alike Part 1', () => {
   it('shall return 5', () => {

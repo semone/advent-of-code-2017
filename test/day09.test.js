@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day9 = require('../src/day9/day9')
+const day9 = require('../src/day09/day9')
 
 describe('Stream Processing Part 1', () => {
   it('shall remove ignored chars', () => {

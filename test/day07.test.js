@@ -14,7 +14,7 @@ cntj(57)`
 
 const assert = require('chai').assert
 
-const day7 = require('../src/day7/day7')
+const day7 = require('../src/day07/day7')
 
 describe('Corruption Checksum Part 1', () => {
   it('shall return tknk', () => {

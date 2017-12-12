@@ -5,7 +5,7 @@ c inc -20 if c == 10`
 
 const assert = require('chai').assert
 
-const day8 = require('../src/day8/day8')
+const day8 = require('../src/day08/day8')
 
 describe('I Heard You Like Registers Part 1', () => {
   it('shall return 1', () => {

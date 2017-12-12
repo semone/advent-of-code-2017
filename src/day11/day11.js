@@ -8,19 +8,20 @@ const STEP = {
 }
 
 function getPosition (input) {
-  const steps = input.trim().split(',')
-  const pos = steps.reduce((position, element) => {
-    position.x += STEP[element].x
-    position.y += STEP[element].y
+  return input
+    .trim()
+    .split(',')
+    .reduce((position, element) => {
+      position.x += STEP[element].x
+      position.y += STEP[element].y
 
-    const possibleMax = getDistance(position)
-    if (possibleMax[0] > position.max) {
-      position.max = possibleMax[0]
-    }
+      const possibleMax = getDistance(position)
+      if (possibleMax[0] > position.max) {
+        position.max = possibleMax[0]
+      }
 
-    return position
-  }, { x: 0, y: 0, max: 0 })
-  return pos
+      return position
+    }, { x: 0, y: 0, max: 0 })
 }
 
 function getDistance (stop) {

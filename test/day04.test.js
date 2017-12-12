@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day4 = require('../src/day4/day4')
+const day4 = require('../src/day04/day4')
 
 describe('High-Entropy Passphrases Part 1', () => {
   it('shall return 1', () => {

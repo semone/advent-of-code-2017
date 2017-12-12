@@ -2,7 +2,7 @@ const assert = require('chai').assert
 
 const day2 = require('../src/day11/day11')
 
-describe('Corruption Checksum Part 1', () => {
+describe('Hex Ed Part 1', () => {
   it('shall get position', () => {
     const input = 'ne,ne,ne'
     const result = day2.getPosition(input)
@@ -34,7 +34,7 @@ describe('Corruption Checksum Part 1', () => {
   })
 })
 
-describe('Corruption Checksum Part 2', () => {
+describe('Hex Ed Part 2', () => {
   it('shall get distance', () => {
     const input = 'ne,ne,sw,sw'
     const result = day2.solve(input)

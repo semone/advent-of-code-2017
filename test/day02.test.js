@@ -1,6 +1,6 @@
 const assert = require('chai').assert
 
-const day2 = require('../src/day2/day2')
+const day2 = require('../src/day02/day2')
 
 describe('Corruption Checksum Part 1', () => {
   it('shall return 8884', () => {
