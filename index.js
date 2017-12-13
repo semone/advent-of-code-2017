@@ -11,6 +11,7 @@ const day9 = require('./src/day09/day9')
 const day10 = require('./src/day10/day10')
 const day11 = require('./src/day11/day11')
 const day12 = require('./src/day12/day12')
+const day13 = require('./src/day13/day13')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -116,3 +117,13 @@ const result122 = day12.solvePart2(inputDay12)
 console.log('\n------> Digital Plumber')
 console.log(`Result Day 12 Part 1: ${result121}`)
 console.log(`Result Day 11 Part 2: ${result122}`)
+
+// Day 13
+const inputDay13 = fs.readFileSync('./src/day13/day13-input.txt', 'utf-8')
+
+const result131 = day13.solvePart1(inputDay13)
+const result132 = day13.solvePart2(inputDay13)
+
+console.log('\n------> Packet Scanners')
+console.log(`Result Day 13 Part 1: ${result131}`)
+console.log(`Result Day 13 Part 2: ${result132}`)
