@@ -12,6 +12,7 @@ const day10 = require('./src/day10/day10')
 const day11 = require('./src/day11/day11')
 const day12 = require('./src/day12/day12')
 const day13 = require('./src/day13/day13')
+const day14 = require('./src/day14/day14')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -127,3 +128,13 @@ const result132 = day13.solvePart2(inputDay13)
 console.log('\n------> Packet Scanners')
 console.log(`Result Day 13 Part 1: ${result131}`)
 console.log(`Result Day 13 Part 2: ${result132}`)
+
+// Day 13
+const inputDay14 = 'hxtvlmkl'
+
+const result141 = day14.solvePart1(inputDay14, 128)
+const result142 = day14.solvePart2(inputDay14, 128)
+
+console.log('\n------> Disk Defragmentation')
+console.log(`Result Day 14 Part 1: ${result141}`)
+console.log(`Result Day 14 Part 2: ${result142}`)
