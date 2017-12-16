@@ -14,6 +14,7 @@ const day12 = require('./src/day12/day12')
 const day13 = require('./src/day13/day13')
 const day14 = require('./src/day14/day14')
 const day15 = require('./src/day15/day15')
+const day16 = require('./src/day16/day16')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -147,5 +148,16 @@ const result151 = day15.solvePart1(inputDay15)
 const result152 = day15.solvePart2(inputDay15)
 
 console.log('\n------> Dueling Generators')
-console.log(`Result Day 14 Part 1: ${result151}`)
-console.log(`Result Day 14 Part 2: ${result152}`)
+console.log(`Result Day 15 Part 1: ${result151}`)
+console.log(`Result Day 15 Part 2: ${result152}`)
+
+// Day 16
+
+const inputDay16 = fs.readFileSync('./src/day16/day16-input.txt', 'utf-8')
+const danceSequence = 'abcdefghijklmnop'
+const result621 = day16.solvePart1(inputDay16, danceSequence)
+const result162 = day16.solvePart2(inputDay16, danceSequence)
+
+console.log('\n------> Permutation Promenade')
+console.log(`Result Day 16 Part 1: ${result621}`)
+console.log(`Result Day 16 Part 2: ${result162}`)

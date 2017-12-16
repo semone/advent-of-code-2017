@@ -75,6 +75,5 @@ function solvePart2 (input, rows) {
 
 module.exports = {
   solvePart1,
-  solvePart2,
-  convertToBits
+  solvePart2
 }
