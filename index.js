@@ -15,6 +15,7 @@ const day13 = require('./src/day13/day13')
 const day14 = require('./src/day14/day14')
 const day15 = require('./src/day15/day15')
 const day16 = require('./src/day16/day16')
+const day17 = require('./src/day17/day17')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -155,9 +156,19 @@ console.log(`Result Day 15 Part 2: ${result152}`)
 
 const inputDay16 = fs.readFileSync('./src/day16/day16-input.txt', 'utf-8')
 const danceSequence = 'abcdefghijklmnop'
-const result621 = day16.solvePart1(inputDay16, danceSequence)
+const result161 = day16.solvePart1(inputDay16, danceSequence)
 const result162 = day16.solvePart2(inputDay16, danceSequence)
 
 console.log('\n------> Permutation Promenade')
-console.log(`Result Day 16 Part 1: ${result621}`)
+console.log(`Result Day 16 Part 1: ${result161}`)
 console.log(`Result Day 16 Part 2: ${result162}`)
+
+// Day 17
+
+const inputDay17 = 366
+const result171 = day17.solvePart1(inputDay17)
+const result172 = day17.solvePart2(inputDay17)
+
+console.log('\n------> Spinlock')
+console.log(`Result Day 16 Part 1: ${result171}`)
+console.log(`Result Day 16 Part 2: ${result172}`)
