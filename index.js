@@ -16,6 +16,8 @@ const day14 = require('./src/day14/day14')
 const day15 = require('./src/day15/day15')
 const day16 = require('./src/day16/day16')
 const day17 = require('./src/day17/day17')
+const day18 = require('./src/day18/day18')
+const day19 = require('./src/day19/day19')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -172,3 +174,23 @@ const result172 = day17.solvePart2(inputDay17)
 console.log('\n------> Spinlock')
 console.log(`Result Day 16 Part 1: ${result171}`)
 console.log(`Result Day 16 Part 2: ${result172}`)
+
+// // Day 18
+
+const inputDay18 = fs.readFileSync('./src/day18/day18-input.txt', 'utf-8')
+
+const result181 = day18.solvePart1(inputDay18)
+const result182 = day18.solvePart2(inputDay18)
+
+console.log('\n------> Duet')
+console.log(`Result Day 16 Part 1: ${result181}`)
+console.log(`Result Day 16 Part 2: ${result182}`)
+
+// Day 19
+const inputDay19 = fs.readFileSync('./src/day19/day19-input.txt', 'utf-8')
+
+const result19 = day19.solve(inputDay19)
+
+console.log('\n------> A Series of Tubes')
+console.log(`Result Day 16 Part 1: ${result19[0]}`)
+console.log(`Result Day 16 Part 2: ${result19[1]}`)
