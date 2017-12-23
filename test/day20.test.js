@@ -12,5 +12,5 @@ describe('Particle SwarmPart 1', () => {
   })
 })
 
-describe('Particle Swarm Part 1', () => {
+describe('Particle Swarm Part 2', () => {
 })
