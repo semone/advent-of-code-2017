@@ -1,0 +1,61 @@
+set b 93 				b = 93
+set c b 				c = 93
+jnz a 2 				if a != 0 YES
+jnz 1 5
+mul b 100
+sub b -100000   b = 93*100+100000
+set c b
+sub c -17000		c = 93*100+100000+17000
+set f 1					f = 1
+	set d 2					d = 2
+		set e 2					e = 2
+		set g d
+			mul g e
+			sub g b						g = d*e - b
+			jnz g 2
+				set f 0					if g = 0 f=0
+			sub e -1				 e++
+			set g e
+			sub g b		g = e -b
+			jnz g -8			<---jump to 12 if g != 0
+		sub d -1 d++
+		set g d
+		sub g b g = d-b
+		jnz g -13			<--- jump to 11 if g != 0
+	jnz f 2
+	sub h -1		if f =0 h++
+	set g b
+	sub g c 		g = b-c  <--- will break when b-c === 0
+	jnz g 2
+	jnz 1 3     <--- break if g =0
+	sub b -17		b+17
+jnz 1 -23   <-- jump to 9 if g != 0
+
+let b = 93 * 100 + 100000
+let c = 93 * 100 + 100000 + 17000
+let f = 1
+let d = 2
+let e = 2
+let h = 0
+
+while (b <= c) {
+	f = 1
+	d = 2
+	while (d <= b) {
+		e = 2
+		while (e <= b) {
+			if (d * e === b) {
+				f = 0
+			}
+			e++
+		}
+		d++
+	}
+	if (f === 0) {
+		h++
+	}
+	b += 17
+}
+
+return h
+
