@@ -22,6 +22,7 @@ const day20 = require('./src/day20/day20')
 const day21 = require('./src/day21/day21')
 const day22 = require('./src/day22/day22')
 const day23 = require('./src/day23/day23')
+const day24 = require('./src/day24/day24')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -238,3 +239,11 @@ const result232 = day23.solvePart2(inputDay23)
 console.log('\n------> Coprocessor Conflagration')
 console.log(`Result Day 23 Part 1: ${result231}`)
 console.log(`Result Day 23 Part 2: ${result232}`)
+
+// Day 24
+const inputDay24 = fs.readFileSync('./src/day24/day24-input.txt', 'utf-8')
+
+const result241 = day24.solve(inputDay24)
+
+console.log('\n------> Coprocessor Conflagration')
+console.log(`Result Day 24 Part 1,2: ${result241}`)

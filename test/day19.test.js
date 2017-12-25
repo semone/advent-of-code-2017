@@ -16,7 +16,7 @@ describe('A Series of Tubes Part 1', () => {
   })
 })
 
-describe('A Series of Tubes Part 1', () => {
+describe('A Series of Tubes Part 2', () => {
   it('shall return the number of steps', () => {
     const result = day19.solve(input)
     assert.equal(result[1], 38)
