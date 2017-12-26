@@ -23,6 +23,7 @@ const day21 = require('./src/day21/day21')
 const day22 = require('./src/day22/day22')
 const day23 = require('./src/day23/day23')
 const day24 = require('./src/day24/day24')
+const day25 = require('./src/day25/day25')
 
 // Day 1
 const inputDay1 = fs.readFileSync('./src/day01/day1-input.txt', 'utf-8')
@@ -245,5 +246,13 @@ const inputDay24 = fs.readFileSync('./src/day24/day24-input.txt', 'utf-8')
 
 const result241 = day24.solve(inputDay24)
 
-console.log('\n------> Coprocessor Conflagration')
+console.log('\n------> Electromagnetic Moat')
 console.log(`Result Day 24 Part 1,2: ${result241}`)
+
+// Day 25
+const inputDay25 = fs.readFileSync('./src/day25/day25-input.txt', 'utf-8')
+
+const result251 = day25.solve(inputDay25)
+
+console.log('\n------> The Halting Problem')
+console.log(`Result Day 25 Part 1: ${result251}`)

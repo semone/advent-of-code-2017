@@ -32,5 +32,5 @@ describe('Sporifica Virus Part 2', () => {
   it('shall return infected nodes', () => {
     const result = day22.solvePart2(input, 10000000)
     assert.equal(result, 2511944)
-  }).timeout(10000)
+  }).timeout(20000)
 })
